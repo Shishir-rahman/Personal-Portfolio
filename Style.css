@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+.fixed-bg{
+    background-image: url("./Image/1678543641090-01.jpeg");
+    background-attachment: fixed;
+    height: 950px;
+    background-size: cover;
+    position: relative;
+
+}
+
+.fixed-section-child{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10%;
+}
+
+
+.concert-one-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #2B547E;
+}
+  
+
+.section4{
+    height: 250px;
+}
+
+
+.section5{
+    margin-top: 150px;
+}
+
+.section5-pic-div{
+    position: relative;
+
+}
+
+.section5-pic{
+    transition: .5s ease;
+}
+
+.section5-pic-details{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+}
+
+
+.section5-pic-div:hover > .section5-pic{
+    opacity: .3;
+}
+
+.section5-pic-div:hover > .section5-pic-details{
+    opacity: 1;
+}
+
+
+
+.cards-wrapper{
+    display: flex;
+}
+
+.card{
+    width: calc(100%/3);
+}
