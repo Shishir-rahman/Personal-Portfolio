@@ -63,11 +63,13 @@
 }
 
 
-
-.cards-wrapper{
-    display: flex;
+.test-mask{
+    mask-image: url("./Image/Pronali_logo-removebg-preview.png");
+    mask-repeat: no-repeat;
 }
 
-.card{
-    width: calc(100%/3);
+
+.progress-bar-1::after{
+    background-color: #2B547E;
+    width: 80%;
 }
