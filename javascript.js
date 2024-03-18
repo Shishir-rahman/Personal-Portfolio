@@ -1,9 +1,5 @@
-var num1 = 5;
-var num2 = 3;
 
-var sum, sub;
-sum = num1 + num2;
-sub = num1 -num2
-document.getElementById("test").innerHTML = sum;
+["Hello", "Shishir"].forEach(alert);
 
-document.getElementById("test").innerHTML = sub;
+const birthday = '17.06.1997';
+const age = someCode(birthday);
