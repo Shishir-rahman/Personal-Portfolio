@@ -9,10 +9,10 @@ const Experience = () => {
       company: "Sokrio Technologies Ltd.",
       period: "June 2025 - Present",
       achievements: [
-        "Maintain and monitor daily financial transactions including vouchers, ledgers, and bank reconciliations.",
-        "Prepare monthly financial statements and reports for management review.",
-        "Manage payroll, employee attendance, and leave records.",
-        "Prepare and submit VAT & TAX returns in a timely manner."
+        "Financial Integrity: Overseeing daily financial operations, including ledger maintenance, bank reconciliations, and voucher management to ensure 100% data accuracy.",
+        "Strategic Reporting: Synthesizing complex financial data into monthly statements and reports for executive leadership review.",
+        "Regulatory Compliance: Managing the end-to-end process of VAT and TAX return submissions while ensuring adherence to government regulations.",
+        "Operational Excellence: Streamlining administrative workflows, payroll processing, and vendor logistics to maintain organizational efficiency."
       ]
     },
     {
