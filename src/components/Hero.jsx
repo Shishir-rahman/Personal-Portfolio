@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="absolute bottom-10 w-3/4 h-3/4 bg-white/10 blur-[100px] rounded-full z-0" />
 
             {/* Floating Card 1 */}
-            <motion.div 
+            {/*<motion.div 
               className="absolute top-1/4 right-0 md:-right-12 glass-panel bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl z-20 shadow-2xl max-w-[200px]"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -79,7 +79,7 @@ const Hero = () => {
               <p className="text-white text-xs font-bold leading-tight">BDT 5M+ Transactions Managed Monthly</p>
             </motion.div>
 
-            {/* Floating Card 2 */}
+            {/* Floating Card 2 */} 
             <motion.div 
               className="absolute bottom-1/4 left-0 md:-left-8 glass-panel bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl z-20 shadow-2xl max-w-[220px]"
               animate={{ y: [0, 10, 0] }}
