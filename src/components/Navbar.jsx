@@ -17,6 +17,7 @@ const Navbar = () => {
           <li className="hover:text-neonBlue transition-colors cursor-pointer"><a href="#experience">Experience</a></li>
           <li className="hover:text-neonBlue transition-colors cursor-pointer"><a href="#skills">Skills</a></li>
           <li className="hover:text-neonBlue transition-colors cursor-pointer"><a href="#education">Education</a></li>
+          <li className="hover:text-neonBlue transition-colors cursor-pointer"><a href="#interests">Interests</a></li>
           <li className="hover:text-neonBlue transition-colors cursor-pointer"><a href="#contact">Contact</a></li>
         </ul>
       </div>
