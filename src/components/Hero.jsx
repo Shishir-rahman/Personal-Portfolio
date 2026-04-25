@@ -16,10 +16,10 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-block px-4 py-1.5 rounded-full border border-white/30 text-white/90 text-sm mb-6 font-medium tracking-wide">
-              Financial Management & QA
+              Financial Management
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-black text-white leading-none tracking-tight mb-6 italic">
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-none tracking-tight mb-6 italic">
               SHISHIR<br />RAHMAN
             </h1>
             
@@ -65,15 +65,15 @@ const Hero = () => {
             <div className="absolute bottom-10 w-3/4 h-3/4 bg-white/10 blur-[100px] rounded-full z-0" />
 
             {/* Floating Card 1 */}
-            {/*<motion.div 
-              className="absolute top-1/4 right-0 md:-right-12 glass-panel bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl z-20 shadow-2xl max-w-[200px]"
+            <motion.div 
+              className="absolute top-1/4 right-0 md:-right-12 glass-panel p-4 z-20 shadow-2xl max-w-[200px] hidden md:block"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="flex items-center gap-2 mb-2">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-stone-700 border-2 border-stone-500 flex items-center justify-center text-xs text-white">QA</div>
-                  <div className="w-8 h-8 rounded-full bg-stone-600 border-2 border-stone-400 flex items-center justify-center text-xs text-white">ERP</div>
+                  <div className="w-8 h-8 rounded-full bg-stone-700 border-2 border-stone-500 flex items-center justify-center text-xs text-white font-bold">QA</div>
+                  <div className="w-8 h-8 rounded-full bg-stone-600 border-2 border-stone-400 flex items-center justify-center text-xs text-white font-bold">ERP</div>
                 </div>
               </div>
               <p className="text-white text-xs font-bold leading-tight">BDT 5M+ Transactions Managed Monthly</p>
@@ -81,7 +81,7 @@ const Hero = () => {
 
             {/* Floating Card 2 */} 
             <motion.div 
-              className="absolute bottom-1/4 left-0 md:-left-8 glass-panel bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl z-20 shadow-2xl max-w-[220px]"
+              className="absolute bottom-1/4 left-0 md:-left-8 glass-panel p-4 z-20 shadow-2xl max-w-[220px] hidden md:block"
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
             >

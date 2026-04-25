@@ -74,6 +74,27 @@ const Education = () => {
     }
   ];
 
+  const awards = [
+    {
+      title: "Responsible Employee of the Year (Nominated)",
+      organization: "Alphasoft Technology Ltd.",
+      year: "2023",
+      description: "Nominated for exceptional dedication and responsibility in QA testing and ERP module management."
+    },
+    {
+      title: "Employee of the Month",
+      organization: "Digicon Technologies Ltd.",
+      year: "2021",
+      description: "Awarded for exceptional communication and service quality, handling 100+ daily queries with a 95% resolution rate."
+    },
+    {
+      title: "Best Photography Award",
+      organization: "SunsGraphy",
+      year: "2019",
+      description: "Awarded by SunsGraphy for excellence in visual storytelling and composition."
+    }
+  ];
+
   return (
     <section className="py-24 relative z-10 overflow-hidden" id="education">
       {/* Decorative Image */}
@@ -85,93 +106,130 @@ const Education = () => {
         <img src="/images/education.png" alt="Education Decorative" className="w-full h-full object-contain mix-blend-screen" />
       </motion.div>
 
-      <div className="max-w-6xl mx-auto px-6 space-y-24 relative z-10">
-        
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Education Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-glow-purple mb-10 flex items-center gap-4">
-              <GraduationCap className="text-neonPurple w-10 h-10" /> EDUCATION
-            </h2>
-            <div className="space-y-6">
-              {educationList.map((edu, idx) => (
-                <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonPurple">
-                  <h3 className="text-xl font-bold text-white">{edu.degree}</h3>
-                  <h4 className="text-gray-300 mt-1">{edu.institution}</h4>
-                  {edu.description && (
-                    <p className="text-sm text-gray-400 mt-3 border-t border-white/5 pt-3">
-                      <span className="text-neonPurple font-semibold">Key Coursework:</span> {edu.description.replace('Key Coursework: ', '')}
-                    </p>
-                  )}
-                  <div className="flex justify-between mt-4 text-sm text-gray-400 font-semibold">
-                    {edu.result && <span className="bg-white/10 px-3 py-1 rounded text-neonBlue">{edu.result}</span>}
-                    <span className="bg-white/10 px-3 py-1 rounded">{edu.year}</span>
+          
+          {/* Left Column: Education, Certifications & Awards */}
+          <div className="space-y-16">
+            {/* Education Section */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-glow-purple mb-10 flex items-center gap-4 uppercase">
+                <GraduationCap className="text-neonPurple w-10 h-10" /> Education
+              </h2>
+              <div className="space-y-6">
+                {educationList.map((edu, idx) => (
+                  <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonPurple">
+                    <h3 className="text-xl font-bold text-white">{edu.degree}</h3>
+                    <h4 className="text-gray-300 mt-1">{edu.institution}</h4>
+                    {edu.description && (
+                      <p className="text-sm text-gray-400 mt-3 border-t border-white/5 pt-3">
+                        <span className="text-neonPurple font-semibold">Key Coursework:</span> {edu.description.replace('Key Coursework: ', '')}
+                      </p>
+                    )}
+                    <div className="flex justify-between mt-4 text-sm text-gray-400 font-semibold">
+                      <span className="bg-white/10 px-3 py-1 rounded">{edu.year}</span>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Extracurricular Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-glow-blue mb-10 flex items-center gap-4 uppercase">
-              <Award className="text-neonBlue w-10 h-10" /> Leadership & Extracurricular Activities
-            </h2>
-            <div className="space-y-6">
-              {activities.map((act, idx) => (
-                <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonBlue">
-                  <h3 className="text-xl font-bold text-white">{act.role}</h3>
-                  <h4 className="text-neonBlue mt-1 font-semibold">{act.organization}</h4>
-                  <p className="text-xs text-gray-400 mt-1 mb-4">{act.period}</p>
-                  <ul className="space-y-2">
-                    {act.points.map((point, i) => (
-                      <li key={i} className="text-gray-300 text-sm flex items-start">
-                        <span className="text-neonBlue mr-2">▹</span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Training & Certifications Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-glow-purple mb-10 flex items-center gap-4">
-            <Award className="text-neonPurple w-10 h-10" /> TRAINING & PROFESSIONAL CERTIFICATIONS
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certifications.map((cert, idx) => (
-              <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonPurple flex justify-between items-center">
-                <div>
-                  <h3 className="text-xl font-bold text-white">{cert.title}</h3>
-                  <h4 className="text-gray-300 mt-1">{cert.organization}</h4>
-                </div>
-                <div className="text-sm text-gray-400 font-semibold bg-white/10 px-3 py-1 rounded">
-                  {cert.date}
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </motion.div>
+            </motion.div>
 
+            {/* Certifications Section */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-glow-purple mb-10 flex items-center gap-4 uppercase">
+                <Award className="text-neonPurple w-10 h-10" /> Certifications
+              </h2>
+              <div className="space-y-6">
+                {certifications.map((cert, idx) => (
+                  <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonPurple flex justify-between items-center">
+                    <div>
+                      <h3 className="text-xl font-bold text-white">{cert.title}</h3>
+                      <h4 className="text-gray-300 mt-1">{cert.organization}</h4>
+                    </div>
+                    <div className="text-sm text-gray-400 font-semibold bg-white/10 px-3 py-1 rounded">
+                      {cert.date}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Awards Section */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-glow-blue mb-10 flex items-center gap-4 uppercase">
+                <Award className="text-neonBlue w-10 h-10" /> Awards & Recognition
+              </h2>
+              <div className="space-y-6">
+                {awards.map((award, idx) => (
+                  <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonBlue">
+                    <div className="flex justify-between items-center mb-2">
+                      <div>
+                        <h3 className="text-xl font-bold text-white">{award.title}</h3>
+                        <h4 className="text-gray-300 mt-1">{award.organization}</h4>
+                      </div>
+                      <div className="text-sm text-gray-400 font-semibold bg-white/10 px-3 py-1 rounded text-neonBlue">
+                        {award.year}
+                      </div>
+                    </div>
+                    {award.description && (
+                      <p className="text-sm text-gray-400 border-t border-white/5 pt-3 italic">
+                        {award.description}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Right Column: Leadership */}
+          <div className="space-y-16">
+            {/* Leadership Section */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-glow-blue mb-10 flex items-center gap-4 uppercase">
+                <Award className="text-neonBlue w-10 h-10" /> Leadership & Activities
+              </h2>
+              <div className="space-y-6">
+                {activities.map((act, idx) => (
+                  <div key={idx} className="glass-panel p-6 border-l-4 border-l-neonBlue">
+                    <h3 className="text-xl font-bold text-white">{act.role}</h3>
+                    <h4 className="text-neonBlue mt-1 font-semibold">{act.organization}</h4>
+                    <p className="text-xs text-gray-400 mt-1 mb-4">{act.period}</p>
+                    <ul className="space-y-2">
+                      {act.points.map((point, i) => (
+                        <li key={i} className="text-gray-300 text-sm flex items-start">
+                          <span className="text-neonBlue mr-2">▹</span>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+        </div>
       </div>
     </section>
   );
