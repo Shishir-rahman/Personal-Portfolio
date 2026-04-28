@@ -29,7 +29,7 @@ const Hero = () => {
 
             <div className="flex gap-4">
               <a href="#contact" className="inline-flex items-center gap-3 bg-stone-900 text-white px-8 py-4 rounded-full font-bold hover:bg-stone-800 transition-colors shadow-lg">
-                Book a Free Call <ArrowRight size={20} />
+                Hire <ArrowRight size={20} />
               </a>
             </div>
 
