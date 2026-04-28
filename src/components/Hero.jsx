@@ -24,7 +24,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-white/80 mb-10 max-w-xl leading-relaxed font-medium">
-              Dedicated professional with a strong background in Finance, Accounts, and Administrative operations, seeking to leverage expertise in ERP systems and Technology to drive organizational efficiency. Proven track record in managing high-value financial transactions, ensuring VAT & TAX compliance, and optimizing administrative workflows. Committed to utilizing technical proficiency in software quality and data management to deliver precise financial reporting and streamlined operational discipline.
+              Dedicated professional with a strong background in Finance, Accounts, and Administrative operations, seeking to leverage expertise in ERP systems and Technology to drive organizational efficiency. Proven track record in managing high-value financial transactions, ensuring VAT &amp; TAX compliance, and optimizing administrative workflows. Committed to utilizing technical proficiency in software quality and data management to deliver precise financial reporting and streamlined operational discipline.
             </p>
 
             <div className="flex gap-4">
@@ -39,7 +39,7 @@ const Hero = () => {
               <div className="flex flex-wrap items-center gap-6 text-white/70 font-semibold text-sm md:text-base">
                 <span className="flex items-center gap-2"><CheckCircle size={18} /> ERP Systems</span>
                 <span className="flex items-center gap-2"><CheckCircle size={18} /> Financial Reporting</span>
-                <span className="flex items-center gap-2"><CheckCircle size={18} /> VAT & TAX</span>
+                <span className="flex items-center gap-2"><CheckCircle size={18} /> VAT &amp; TAX</span>
                 <span className="flex items-center gap-2"><CheckCircle size={18} /> Admin Ops</span>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Hero = () => {
               <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mb-2">
                 <Star size={16} className="text-white" />
               </div>
-              <p className="text-white text-xs font-bold leading-tight">100% VAT, TAX & Compliance Record Maintained</p>
+              <p className="text-white text-xs font-bold leading-tight">100% VAT, TAX &amp; Compliance Record Maintained</p>
             </motion.div>
           </motion.div>
         </div>
